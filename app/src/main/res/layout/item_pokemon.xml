@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+        <ImageView
+            android:id="@+id/pokemonImage"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginEnd="8dp"/> <!-- Add marginEnd to space items -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp"> <!-- Reduce marginStart to 8dp -->
+
+            <TextView
+                android:id="@+id/pokemonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:text="Pokemon Name"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/pokemonType1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/type_background"
+                    android:padding="4dp"
+                    android:textColor="#6C6C6C"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Type1"/>
+
+                <TextView
+                    android:id="@+id/pokemonType2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/type_background"
+                    android:padding="4dp"
+                    android:textColor="#6C6C6C"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Type2"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pokemonDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="#6C6C6C"
+                android:text="Description"/>
+        </LinearLayout>
+    </LinearLayout>
+
